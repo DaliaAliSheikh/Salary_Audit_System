@@ -1,1 +1,16 @@
-# Salary_Audit_System
+# 💸 نظام تدقيق الرواتب - Salary Audit System
+
+برنامج يقوم بفحص قائمة رواتب الموظفين وتصنيفها إلى رواتب عادية أو رواتب تحتاج إلى تدقيق مالي إذا كانت 1000 دولار أو أكثر. يطبق هذا المشروع مفهوم الحلقات التكرارية (`For Loops`) والشروط المنطقية (`If-Else`).
+
+### 💻 كود البرنامج (Python Code):
+```python
+# 1. تعريف قائمة الرواتب وإضافة راتب جديد للتجربة
+salaries = [800, 1200, 950, 2000, 500, 1500]
+salaries.append(2500) 
+
+# 2. المرور على الرواتب وتدقيقها بناءً على الشرط
+for salary in salaries:
+    if salary >= 1000:
+        print("⚠️ Audit Required: $", salary)
+    else:
+        print("✅ Normal Salary: $", salary)
